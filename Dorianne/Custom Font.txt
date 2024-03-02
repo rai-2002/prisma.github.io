@@ -1,0 +1,26 @@
+---------------------------
+HTML
+--------------------------
+Html section:
+
+N/A
+
+
+Body section:
+
+
+<div>With CSS, websites can finally use fonts other than the pre selected "web-safe" fonts.</div>
+
+
+---------------------------
+CSS
+--------------------------
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+
+div {
+  font-family: myFirstFont;
+}
