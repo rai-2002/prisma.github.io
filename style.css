@@ -60,7 +60,7 @@ body, html {
 .flex-item-right {
   /* background-color: darkgray; */
 
-  font-family: Panchang,  Arial, sans-serif;
+  font-family: 'Panchang',  'Open Sans', sans-serif;
   line-height: 1;
   letter-spacing: 25px;
   font-weight: bold;
