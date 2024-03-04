@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: Panchang;
-  src: url(/assets/fonts/Panchang-Variable.woff2) format('woff2');
+  src: url(Panchang-Variable.woff2) format('woff2');
 }
 
 body, html {
