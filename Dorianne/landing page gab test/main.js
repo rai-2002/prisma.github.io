@@ -1,5 +1,5 @@
 // counter
-var countDownDate = new Date("May 25, 2024 18:00:00").getTime();
+var countDownDate = new Date("May 23, 2024 18:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -19,6 +19,7 @@ var x = setInterval(function() {
   // Display the result in the element with id="demo"
   document.getElementById("counter").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
+
 
   // If the count down is finished, write some text 
   if (distance < 0) {
