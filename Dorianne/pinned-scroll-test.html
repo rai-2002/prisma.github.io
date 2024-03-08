@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prisma test</title>
+    <link href="https://unpkg.com/scrolltrigger-scrollto/dist/ScrollTriggerAnimations.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrolltrigger-scrollto/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.9.2/dist/gsap.min.js"></script>
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .project-title {
+            /* position: fixed; */
+            top: 100%;
+            background-color: blueviolet;
+            color: aliceblue;
+            text-align: center;
+            padding: 10px;
+            z-index: 0;
+        }
+
+        .gallery {
+            background-color: lightgray;
+            padding-top: 80px;
+        }
+
+        .container {
+            margin-top: 5%;
+            padding-bottom: 5%;
+            border-bottom: solid black 0.8vw;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            border: none;
+        }
+
+        h5.card-title {
+            font-weight: bold;
+            border-bottom: solid 0.5vh;
+        }
+
+        .card-body {
+            text-align: right;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .card-img-top:hover {
+            -webkit-filter: blur(5px);
+            -moz-filter: blur(5px);
+            -ms-filter: blur(5px);
+            filter: blur(5px);
+            transition: all 0.3s;
+            will-change: transform;
+        }
+
+        h1 {
+            text-align: center;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Scroll trigger pinned text trial</h1>
+
+    <div class="gallery">
+
+        <div class="project-title">
+            <span class="title">PROJECTS</span>
+        </div>
+
+        <div class="container"> <!-- project grid -->
+            <div class="card">
+                <a href="#"><img src="images/exhibition_dorianne.jpg" class="card-img-top" alt="Adult's Play"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Dorianne Attard</h5>
+                    <p class="card-text">Adult's Play</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="images/exhibition_dorianne.jpg" class="card-img-top" alt="Adult's Play"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Dorianne Attard</h5>
+                    <p class="card-text">Adult's Play</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="images/exhibition_dorianne.jpg" class="card-img-top" alt="Adult's Play"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Dorianne Attard</h5>
+                    <p class="card-text">Adult's Play</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="images/exhibition_dorianne.jpg" class="card-img-top" alt="Adult's Play"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Dorianne Attard</h5>
+                    <p class="card-text">Adult's Play</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="images/exhibition_dorianne.jpg" class="card-img-top" alt="Adult's Play"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Dorianne Attard</h5>
+                    <p class="card-text">Adult's Play</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="images/exhibition_dorianne.jpg" class="card-img-top" alt="Adult's Play"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Dorianne Attard</h5>
+                    <p class="card-text">Adult's Play</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="images/exhibition_dorianne.jpg" class="card-img-top" alt="Adult's Play"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Dorianne Attard</h5>
+                    <p class="card-text">Adult's Play</p>
+                </div>
+            </div>
+            <div class="card">
+                <a href="#"><img src="images/exhibition_dorianne.jpg" class="card-img-top" alt="Adult's Play"></a>
+                <div class="card-body">
+                    <h5 class="card-title">Dorianne Attard</h5>
+                    <p class="card-text">Adult's Play</p>
+                </div>
+            </div>
+            <!-- Add more card elements as needed -->
+        </div> <!-- end of gallery -->
+    </div>
+
+    <script>
+        var animation = gsap.timeline();
+        ScrollTrigger.create({
+            trigger: ".project-title",
+            start: "top top",
+            end: "bottom bottom",
+            pin: ".project-title",
+            // animation: animation,
+            // scrub: true,
+            // markers: true
+        });
+    </script>
+</body>
+</html>
