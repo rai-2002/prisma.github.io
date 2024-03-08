@@ -135,21 +135,22 @@ body, html {
   .flex-item-right {
     /* background-color: darkgray; */
     font-size: 5rem;
+    /* text-align: center; */
     text-align: right;
     display: flex;
     align-self: flex-end;
     position: absolute;
-    bottom: 10%;
-    padding: 1.5rem;
-    padding-right: 3rem;
+    bottom: 0.5%; /* change back to 10% for centered counter with horizontal socials
+    /* padding: 1.5rem; */
+    /* padding-right: 3rem; */ /* to center the right aligned counter */
   }
 
   .icon-bar {
     position: fixed;
-    display: flex; /* Change to flex to enable horizontal alignment */
+    display: block; /* Change to flex to enable horizontal alignment */
     align-items: center;
-    left: 50%;
-    transform: translateX(-50%);
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
     
   }
 }
