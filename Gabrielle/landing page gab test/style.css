@@ -140,17 +140,17 @@ body, html {
     display: flex;
     align-self: flex-end;
     position: absolute;
-    bottom: 0.5%; /* change back to 10% for centered counter with horizontal socials */
-    /* padding: 1.5rem; */
-    /* padding-right: 3rem; */ /* to center the right aligned counter */
+    bottom: 10%; /* change back to 10% for centered counter with horizontal socials */
+    padding: 1.5rem;
+    padding-right: 3rem; /* to center the right aligned counter */
   }
 
   .icon-bar {
     position: fixed;
-    display: block; /* Change to flex to enable horizontal alignment */
+    display: flex; /* Change to flex to enable horizontal alignment */
     align-items: center;
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
+    left: 50%;
+    transform: translateX(-50%);
     
   }
 }
