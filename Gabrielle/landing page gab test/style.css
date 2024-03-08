@@ -135,12 +135,13 @@ body, html {
   .flex-item-right {
     /* background-color: darkgray; */
     font-size: 5rem;
-    text-align: center;
+    text-align: right;
     display: flex;
     align-self: flex-end;
     position: absolute;
     bottom: 10%;
     padding: 1.5rem;
+    padding-right: 3rem;
   }
 
   .icon-bar {
