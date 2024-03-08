@@ -140,7 +140,7 @@ body, html {
     display: flex;
     align-self: flex-end;
     position: absolute;
-    bottom: 0.5%; /* change back to 10% for centered counter with horizontal socials
+    bottom: 0.5%; /* change back to 10% for centered counter with horizontal socials */
     /* padding: 1.5rem; */
     /* padding-right: 3rem; */ /* to center the right aligned counter */
   }
