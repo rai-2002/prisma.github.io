@@ -24,7 +24,9 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     var counterElement = document.getElementById("counter");
-    counterElement.innerHTML = "PRISMA EXHIBITION OPEN";
+    counterElement.innerHTML = "EXHIBITION OPEN";
+  
+    // Add a class to the counter element
     counterElement.classList.add("exhibition-open");
   }
 }, 1000);

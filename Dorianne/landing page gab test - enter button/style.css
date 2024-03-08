@@ -53,8 +53,24 @@ body, html {
   margin: 0;
 }
 
-#counter.exhibition-open {
-  font-size: 30%; 
+#exhibitionStatus {
+  font-size: 10%;
+
+}
+
+#newButton {
+  text-align: center;
+}
+
+#enterButton {
+  background-color: #2D2D2D;
+  color: #FFFBEA;
+  width: 100px;
+  padding: 1em; /* Adjust padding */
+  margin-top: 1em; /* Adjust spacing */
+  border-radius: 50px;
+  border: none;
+  margin: 0 auto;
 }
 
 /* social media bar */
@@ -130,12 +146,6 @@ body, html {
     position: absolute;
     bottom: 10%; 
     padding: 3rem;
-  }
-
-  #counter.exhibition-open {
-    font-size: 30%; 
-    text-align: right;
-    letter-spacing: 0.5rem;
   }
 
   .icon-bar {
