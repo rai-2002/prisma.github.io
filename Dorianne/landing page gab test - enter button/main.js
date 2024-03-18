@@ -26,7 +26,7 @@ var x = setInterval(function() {
     var counterElement = document.getElementById("counter");
     counterElement.innerHTML = "EXHIBITION OPEN";
   
-    // Add a class to the counter element
+    // button
     counterElement.classList.add("exhibition-open");
   }
 }, 1000);
