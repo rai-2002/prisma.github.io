@@ -208,7 +208,7 @@ h1 {
 }
 
 #catalogueIMG {
-  max-width: 50%; 
+  max-width: 30%; 
   height: auto;
 }
 
@@ -341,4 +341,8 @@ h1 {
     height: auto;
   }
 
+  #catalogueIMG {
+    max-width: 50%; 
+    height: auto;
+  }
 }
