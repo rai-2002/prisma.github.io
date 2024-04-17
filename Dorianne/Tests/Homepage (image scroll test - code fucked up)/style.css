@@ -59,9 +59,10 @@ h1 {
   width: 100%;
   height: 5rem;
   box-sizing: border-box;
-  padding-top: 10px;
-  padding-left: 5px;
+  /* padding-top: 10px;
+  padding-left: 5px; */
   top: 0;
+  z-index: 999;
 }
 
 #logo {
@@ -83,22 +84,24 @@ h1 {
 /* -------- burger menu overlay (to fix) ------------ */
 
 .overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
   height: 100%;
   width: 100%;
-  display: flex;
+  display: none;
+  position: fixed;
   z-index: 9999;
+  top: 0;
+  left: 0;
   background-color: #2D2D2D;
+  background-size: cover;
 }
 
 .overlay-content {
-  /* color: #2D2D2D; */
+  color: #2D2D2D;
   width: 100%;
   position: relative;
   top: 30%;
   text-align: center;
+  /* margin-top: 30px; */
 }
 
 .overlay a {
@@ -148,22 +151,15 @@ h1 {
 }
 
 #arrow {
-  padding-bottom: 2rem;
-  font-size: 2rem;
-  color: #FFFBEA;
-  filter: drop-shadow(0px 5px 2px rgba(0, 0, 0, 0.622));
-}
-
-#arrow {
-  position: relative;
+  position: absolute;
   bottom: 0;
   left: 50%;
-  z-index: -1;
   transform: translateX(-50%);
   padding-bottom: 2rem;
   font-size: 2rem;
   color: #FFFBEA;
   filter: drop-shadow(0px 5px 2px rgba(0, 0, 0, 0.622));
+  z-index: 1;
 }
 
 /* ----------- class image (fixed) --------- */
@@ -174,9 +170,7 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
-
   justify-content: center;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -201,11 +195,33 @@ h1 {
   padding-left: 4.5rem;
   padding-right: 4rem;
   font-size: 3rem;
+
+  position: relative;
 }
 
 .about-us span {
   opacity: .1;
   transition: opacity .2s ease;
+}
+
+.rotate-image {
+  position: absolute;
+}
+
+#green-shape {
+  border: 2px solid #e01f1f;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  margin-left: -40%;
+  height: auto;
+  align-items: left;
+}
+
+#yellow-shape {
+  border: 2px solid #ergb(31, 89, 224)
+  width: 80%;
+  height: auto;
 }
 
 /* ----------- project images (to be updated) --------- */
@@ -250,6 +266,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
 .custom-button {
@@ -257,7 +274,6 @@ h1 {
   border: none;
   background-color: transparent;
   padding: 0;
-  /* z-index: 1; */
 }
 
 .button-shape {
@@ -285,7 +301,7 @@ h1 {
 }
 
 .custom-button:hover .button-shape {
-  content: url('shape.png');
+  content: url('shapes/shape.png');
   filter: drop-shadow(5px 8px 0px black); 
 }
 
@@ -300,10 +316,13 @@ h1 {
 /* --------- social media bar ----------- */
 
 .icon-bar {
+
   background-color: #2D2D2D;
+
   display: flex; 
   align-items: center;
   left: 50%;
+  /* transform: translateX(-50%); */
 }
 
 .icon-bar a {
@@ -327,6 +346,7 @@ h1 {
 }
 
 .icon-bar .twitter:hover {
+  /* background: #2D2D2D; */
   background: #E01F26;
 }
 
@@ -355,12 +375,12 @@ h1 {
     font-size: 2.5rem;
   }
 
-  /* .overlay a {font-size: 20px}
+  .overlay a {font-size: 20px}
   .overlay .closebtn {
   font-size: 40px;
   top: 15px;
   right: 35px;
-  } */
+  }
 
   #logoGif {
     width: 100vw; 
@@ -378,5 +398,4 @@ h1 {
 
   .button-text {
     font-size: medium;
-}
 }
