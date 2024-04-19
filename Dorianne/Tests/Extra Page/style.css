@@ -420,7 +420,7 @@ p {
 
 #face-pic {
   width: 110%; 
-  height: auto;
+  height: 0 auto;
 }
 
 @media screen and (min-width: 700px) {
