@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>prisma scroll</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+
+    <section id="holdstart" class="panel">
+        <div class="wrap center">
+          <h1>Start Panel</h1>
+        </div>
+    </section>
+      
+    <div class="wrap-all">
+        <div class="bg"></div>
+        
+        <div class="start-trig"></div>
+        <section id="holdone" class="panel">
+            <div class="wrap center">
+                <h2 class="lines">Section One</h2>
+                <h2 class="lines">Have a COKE.</h2>
+            </div>
+        </section>
+      
+        <section id="holdtwo" class="panel">
+            <div class="wrap center">
+                <h2 class="lines">Section Two</h2>
+                <h2 class="lines">AND.</h2>
+            </div>
+        </section>
+      
+        <section id="holdthree" class="panel">
+            <div class="wrap center">
+                <h2 class="lines">Section Three</h2>
+                <h2 class="lines">a SMILE!</h2>
+            </div>
+        </section>
+      
+    </div>
+      
+    <section id="holdstart" class="panel">
+        <div class="wrap center">
+            <h1>End Panel</h1>
+        </div>
+    </section>
+
+    <!-- Include ScrollTrigger.js after GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
+    <script>
+        // Initialize ScrollTrigger
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Example ScrollTrigger code
+        gsap.to(".bg", {
+            scrollTrigger: {
+                trigger: ".start-trig",
+                pin: ".bg",
+                pinSpacing: false,
+                start: "top top",
+                end: '+=200%',
+                markers: true // Add markers for debugging
+            }
+        });
+    </script>
+
+</body>
+</html>
+
