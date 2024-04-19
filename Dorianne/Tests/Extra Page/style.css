@@ -447,12 +447,11 @@ p {
 
 .social-icon svg {
   fill: #029B83;
-  transition: opacity 0.3s ease; /* Make sure "opacity" is spelled correctly */
-  opacity: 1;
+  transition: fill 0.3s ease; 
 }
 
 .social-icon:hover svg {
-  fill-opacity: 0.5;
+  fill: #2D2D2D;
 
 }
 
