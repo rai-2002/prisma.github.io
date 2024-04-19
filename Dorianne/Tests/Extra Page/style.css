@@ -73,7 +73,8 @@ p {
 
 /* -------- navbar (fixed) ------------ */
 .navbar {
-  border: solid 2px #029B83;
+  /* border: solid 2px #029B83; */
+
   color: #E01F26;
   position: fixed;
   width: 100%;
@@ -419,6 +420,7 @@ p {
 }
 
 #face-pic {
+  display:block;
   width: 100%; 
   height: auto;
 }
