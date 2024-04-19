@@ -61,7 +61,6 @@ h2 {
 
 h3 {
   font-size: small;
-  /* padding-bottom: 2rem; */
   text-align: justify;
 }
 
@@ -80,8 +79,6 @@ p {
   width: 100%;
   height: 5rem;
   box-sizing: border-box;
-  /* padding-top: 10px;
-  padding-left: 5px; */
   top: 0;
   z-index: 999;
 }
@@ -123,7 +120,6 @@ p {
   position: relative;
   top: 30%;
   text-align: center;
-  /* margin-top: 30px; */
 }
 
 .overlay a {
@@ -410,6 +406,7 @@ p {
 
 .profile-layout {
   /* border: solid 3px orange; */
+  
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -417,7 +414,6 @@ p {
   align-items: center;
   gap: 1rem;
   padding: 10vh;
-  /* margin: 0 auto; */
 }
 
 #face-pic {
