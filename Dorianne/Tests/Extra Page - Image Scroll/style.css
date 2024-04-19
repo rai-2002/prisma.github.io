@@ -19,6 +19,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 5;
 }
 
 .progress-container {
@@ -461,3 +462,33 @@ p {
  color:#FFFBEA;
  background-color: #E01F26;
 }
+
+        /* Gallery container */
+        .gallery-grid {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          justify-content: space-between;
+
+      }
+
+      /* Gallery item */
+      .gallery-item {
+          flex: 0 0 calc(33.33% - 10px); /* Three columns, with 10px gap between them */
+          margin-bottom: 10px;
+          position:relative;
+          z-index: 1;
+      }
+
+      /* Responsive layout for smaller screens */
+      @media screen and (max-width: 768px) {
+          .gallery-item {
+              flex: 0 0 calc(100% - 10px); /* One column */
+          }
+      }
+
+      /* Image styling */
+      .gallery-item img {
+          width: 100%;
+          height: auto;
+      }
