@@ -423,11 +423,13 @@ p {
   height: 110%;
 }
 
-@media screen and (min-width: 700px) {
+/* for desktop screen */
+@media screen and (min-width: 700px) { 
 
 
   #face-pic {
-    width: 30rem; 
+    width: 30rem;
+    height: 0 auto; 
   }
 
   .profile-layout {
