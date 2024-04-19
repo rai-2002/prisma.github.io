@@ -405,6 +405,7 @@ p {
   background-color: #FFFBEA;
   color: #2D2D2D;
   width: 100%;
+  height: auto;
 }
 
 .profile-layout {
@@ -416,7 +417,7 @@ p {
   align-items: center;
   gap: 1rem;
   padding: 10vh;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 #face-pic {
