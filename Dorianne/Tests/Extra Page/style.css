@@ -442,6 +442,16 @@ p {
   letter-spacing: 0.5rem;
   color:#045A70;
   text-align: center;
+}
+
+.social-icon svg {
+  fill: #029B83;
+  transition: opacity 0.3s ease; /* Make sure "opacity" is spelled correctly */
+  opacity: 1;
+}
+
+.social-icon:hover svg {
+  fill-opacity: 0.5;
 
 }
 
