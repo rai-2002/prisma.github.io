@@ -416,7 +416,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding: 10vh;
+  /* padding: 10vh; */
   /* margin: 0 auto; */
 }
 
