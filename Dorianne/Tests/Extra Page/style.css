@@ -410,20 +410,20 @@ p {
 
 .profile-layout {
   /* border: solid 3px orange; */
-
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  /* padding: 10vh; */
+  padding: 10vh;
   /* margin: 0 auto; */
 }
 
 #face-pic {
-  display:block;
-  width: 100%; 
-  height: auto;
+  display: block;
+  width: auto; 
+  height: 50vh;
 }
 
 /* for desktop screen */
@@ -431,8 +431,8 @@ p {
 
 
   #face-pic {
-    width: 30rem;
-    height: 0 auto; 
+    width: auto;
+    height: 60vh; 
   }
 
   .profile-layout {
