@@ -236,21 +236,20 @@ h1 {
   height: auto;
 }
 
-#catalogue-title {
+/* #catalogue-title {
   margin-right: -1.5rem;
-}
+} */
 
-/*edited*/
+/*Download button - edited*/
 .btn {
   background-color: #E01F26;
   border: none;
   color: white;
-  padding: 12px 30px;
+  /* padding: 12px 30px; */
   cursor: pointer;
-  font-size: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  /* font-size: 20px;
+  display: block; */
+  margin-right: -1.5rem;
 }
 
 .btn:hover {
