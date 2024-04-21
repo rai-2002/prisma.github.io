@@ -242,7 +242,7 @@ h1 {
 
 /*edited*/
 .btn {
-  background-color: black;
+  background-color: #E01F26;
   border: none;
   color: white;
   padding: 12px 30px;
@@ -254,8 +254,8 @@ h1 {
 }
 
 .btn:hover {
-  background-color: Red;
-  color: white;
+  background-color: #E01F26;
+  color: black;
 }
 
 /* ----------- contact us (to be updated) --------- */
