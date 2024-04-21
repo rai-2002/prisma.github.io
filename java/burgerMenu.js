@@ -8,7 +8,13 @@ function closeNav() {
     document.getElementById("myNav").style.display = "none";
   }
 
-// arrow animation
+function closeNav() {
+    var navOverlay = document.getElementById('myNav');
+    navOverlay.style.display = 'none'; 
+  }
+
+//arrow smooth scroll
+
 document.addEventListener('DOMContentLoaded', function() {
   var scrollArrow = document.getElementById('scrollArrow');
   scrollArrow.addEventListener('click', function(event) {

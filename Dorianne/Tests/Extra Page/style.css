@@ -19,6 +19,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 5;
 }
 
 .progress-container {
@@ -61,7 +62,6 @@ h2 {
 
 h3 {
   font-size: small;
-  /* padding-bottom: 2rem; */
   text-align: justify;
 }
 
@@ -80,8 +80,6 @@ p {
   width: 100%;
   height: 5rem;
   box-sizing: border-box;
-  /* padding-top: 10px;
-  padding-left: 5px; */
   top: 0;
   z-index: 999;
 }
@@ -104,7 +102,6 @@ p {
 }
 
 /* -------- burger menu overlay (to fix) ------------ */
-
 .overlay {
   height: 100%;
   width: 100%;
@@ -123,7 +120,6 @@ p {
   position: relative;
   top: 30%;
   text-align: center;
-  /* margin-top: 30px; */
 }
 
 .overlay a {
@@ -151,7 +147,6 @@ p {
 
 
 /* --------- animated logo (fixed) ----------- */
-
 .logoSection {
   display: flex;
   flex-direction: column;
@@ -202,8 +197,8 @@ p {
   font-size: 1rem;
   margin-right: -1.5rem;
 }
-/* ----------- about us text (to be updated) --------- */
 
+/* ----------- about us text (to be updated) --------- */
 .about-us {
   background-color:#FFFBEA;
   color: #2D2D2D;
@@ -410,20 +405,20 @@ p {
 
 .profile-layout {
   /* border: solid 3px orange; */
-
+  
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  /* padding: 10vh; */
-  /* margin: 0 auto; */
+  padding: 10vh;
 }
 
 #face-pic {
-  display:block;
-  width: 100%; 
-  height: auto;
+  display: block;
+  width: auto; 
+  height: 50vh;
 }
 
 /* for desktop screen */
@@ -431,8 +426,8 @@ p {
 
 
   #face-pic {
-    width: 30rem;
-    height: 0 auto; 
+    width: auto;
+    height: 60vh; 
   }
 
   .profile-layout {
@@ -451,12 +446,11 @@ p {
 
 .social-icon svg {
   fill: #029B83;
-  transition: opacity 0.3s ease; /* Make sure "opacity" is spelled correctly */
-  opacity: 1;
+  transition: fill 0.3s ease; 
 }
 
 .social-icon:hover svg {
-  fill-opacity: 0.5;
+  fill: #2D2D2D;
 
 }
 
@@ -466,3 +460,33 @@ p {
  color:#FFFBEA;
  background-color: #E01F26;
 }
+
+        /* Gallery container */
+        .gallery-grid {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          justify-content: space-between;
+
+      }
+
+      /* Gallery item */
+      .gallery-item {
+          flex: 0 0 calc(33.33% - 10px); /* Three columns, with 10px gap between them */
+          margin-bottom: 10px;
+          position:relative;
+          z-index: 1;
+      }
+
+      /* Responsive layout for smaller screens */
+      @media screen and (max-width: 768px) {
+          .gallery-item {
+              flex: 0 0 calc(100% - 10px); /* One column */
+          }
+      }
+
+      /* Image styling */
+      .gallery-item img {
+          width: 100%;
+          height: auto;
+      }

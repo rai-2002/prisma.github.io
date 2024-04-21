@@ -59,8 +59,6 @@ h1 {
   width: 100%;
   height: 5rem;
   box-sizing: border-box;
-  /* padding-top: 10px;
-  padding-left: 5px; */
   top: 0;
   z-index: 999;
 }
@@ -164,7 +162,7 @@ h1 {
 
 /* ----------- class image (fixed) --------- */
 .classImage {
-  background-image: url(class.jpeg);
+  background-image: url(images/class.jpeg);
   width: auto;
   height: 100%;
   display: flex;
@@ -212,24 +210,9 @@ h1 {
   justify-content: center;
 }
 
-.column img {
-  margin-top: 30px;
-  margin-right: 30px;
-}
-
-/* #projects-title {
+#projects-title {
   margin-right: -1.5rem;
-} */
-
-#pinned-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  text-align: center;
 }
-
 
 /* ----------- catalogue (to be updated) ---------- */
 .catalogue {
@@ -246,25 +229,8 @@ h1 {
   height: auto;
 }
 
-/* #catalogue-title {
+#catalogue-title {
   margin-right: -1.5rem;
-} */
-
-/*Download button - edited*/
-.btn {
-  background-color: #E01F26;
-  border: none;
-  color: white;
-  /* padding: 12px 30px; */
-  cursor: pointer;
-  /* font-size: 20px;
-  display: block; */
-  margin-right: -1.5rem;
-}
-
-.btn:hover {
-  background-color: #E01F26;
-  color: black;
 }
 
 /* ----------- contact us (to be updated) --------- */
@@ -311,7 +277,7 @@ h1 {
 }
 
 .custom-button:hover .button-shape {
-  content: url('shape.png');
+  content: url('assets/shape-b.png');
   filter: drop-shadow(5px 8px 0px black); 
 }
 
@@ -322,23 +288,6 @@ h1 {
 .button-shape.no-shadow {
   filter: none; /* Remove drop shadow when this class is applied */
 }
-
-/* form to contact us (edited) */
-.contact-us {
-  background-color:#FFFBEA;
-  color: #2D2D2D;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 10%;
-  padding-bottom:10%;
-  padding-left: 4.5rem;
-  padding-right: 4rem;
-  font-size: 3rem;
-}
-/* form to contact us */
   
 /* --------- social media bar ----------- */
 
@@ -425,5 +374,5 @@ h1 {
 
   .button-text {
     font-size: medium;
-  }
+}
 }
