@@ -217,9 +217,19 @@ h1 {
   margin-right: 30px;
 }
 
-#projects-title {
+/* #projects-title {
   margin-right: -1.5rem;
+} */
+
+#pinned-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
 }
+
 
 /* ----------- catalogue (to be updated) ---------- */
 .catalogue {
