@@ -162,7 +162,7 @@ h1 {
 
 /* ----------- class image (fixed) --------- */
 .classImage {
-  background-image: url(images/class.jpeg);
+  background-image: url(images/class.jpg);
   width: auto;
   height: 100%;
   display: flex;
