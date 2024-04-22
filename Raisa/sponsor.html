@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="brands.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/f1d0954713.js" crossorigin="anonymous"></script>
+    <title>PRISMA</title>
+    <meta data-rh="true" property="g:image" content="https://prisma-bfa.github.io/preview.png">
+    <link rel="image_src" type="image/jpeg" href="https://prisma-bfa.github.io/" />
+    <link rel="icon" type="image/x-icon" href="fav.svg">
+
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+        }
+      
+        .grid-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding: 20px;
+          list-style: none;
+        }
+      
+        .grid-item {
+          flex: 0 0 calc(33.33% - 20px);
+          background-color: #f0f0f0;
+          margin-bottom: 20px;
+          box-sizing: border-box;
+        }
+      
+        @media only screen and (max-width: 768px) {
+          .grid-item {
+            flex-basis: calc(50% - 20px);
+          }
+        }
+      
+        @media only screen and (max-width: 480px) {
+          .grid-item {
+            flex-basis: calc(100% - 20px);
+          }
+        }
+      
+      </style>
+</head>
+<body> 
+ <!--Scroll indicator -->
+   <div class="header">          
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+      <script src="scrollbar.js"></script>
+    </div>  
+  </div>
+ <!--Scroll indicator -->
+
+<!-- navbar -->
+    <div class="navbar">
+        <a href="#"><img id="logo" src="logo-r.png" alt="Logo"></a> 
+    <span id="bmenu" onclick="openNav()">&#9776;</span>
+    <div id="w-border">
+        <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">Homepage</a>
+                <a href="#galleryclass" onclick="closeNav()">Gallery</a>
+                <a href="#catalogueclass" onclick="closeNav()">Catalogue</a>
+                <a href="sponsor.html">Sponsors</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        
+      
+        .grid-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding: 20px;
+          list-style: none;
+          margin: 40px;
+        }
+      
+        .grid-item {
+          flex: 0 0 calc(33.33% - 20px);
+          background-color: #f0f0f0;
+          margin-top: 20px;
+          box-sizing: border-box;
+          position:fixed relative;
+          overflow: hidden;
+        } 
+
+        .grid-item img {
+          width: 100%;
+         height: 100%;
+         object-fit: cover;
+         object-position: center;
+        }
+      
+        @media only screen and (max-width: 768px) {
+          .grid-item {
+            flex-basis: calc(50% - 20px);
+          }
+        }
+      
+        @media only screen and (max-width: 480px) {
+          .grid-item {
+            flex-basis: calc(100% - 20px);
+          }
+        }
+      
+      </style>
+      </head>
+      <body>
+      
+      <ul class="grid-container">
+        <li class="grid-item"><img src="s1.png" alt="image"></li>
+        <li class="grid-item"><img src="s2.png" alt="image"></li>
+        <li class="grid-item"><img src="s3.png" alt=""></li>
+      </ul>
+    
+    <script src="burgerMenu.js"></script>
+    <script src="scroll.js"></script>
+    <script>
+        function closeNav() {
+            var navOverlay = document.getElementById('myNav');
+            navOverlay.style.display = 'none'; 
+        }
+    </script>
+    
+    </body>
+    </html>

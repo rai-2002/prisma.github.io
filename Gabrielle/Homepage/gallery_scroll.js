@@ -1,9 +1,9 @@
-gsap.registerPlugin(ScrollTrigger) 
+gsap.registerPlugin(ScrollTrigger)
 
 ScrollTrigger.create({
-    trigger: ".gallery",
-    start: "top top",
-    endTrigger: ".catalogue",
-    end: "bottom bottom",
-    pin: "#projects-title",
+  trigger: ".gallery",
+  start: "top top",
+  endTrigger: ".catalogue",
+  end: "bottom bottom",
+  pin: true,
 })

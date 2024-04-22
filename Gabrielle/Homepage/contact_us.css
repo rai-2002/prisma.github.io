@@ -1,0 +1,207 @@
+
+@font-face {
+    font-family: 'Panchang';
+    src: url('Panchang-Variable.woff2') format('woff2'),
+         url('Panchang-Variable.woff') format('woff');
+  }
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+/* ------- html (for now okay) -------- */
+
+body, html {
+    background: #E01F26;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFBEA;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+}
+  
+ 
+ /* -------- navbar (fixed) ------------ */
+.navbar {
+    color: #E01F26;
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    box-sizing: border-box;
+    /* padding-top: 10px;
+    padding-left: 5px; */
+    top: 0;
+    z-index: 999;
+}
+  
+#logo {
+    float: left;
+    max-height: 100%;
+}
+  
+#bmenu {
+    margin-right: 4vw;
+    margin: 0 auto;
+    font-size: 3rem; 
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 48%; 
+    transform: translateY(-50%); 
+}
+  
+/* -------- burger menu overlay (to fix) ------------ */
+  
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background-color: #2D2D2D;
+    background-size: cover;
+}
+  
+.overlay-content {
+    color: #2D2D2D;
+    width: 100%;
+    position: relative;
+    top: 30%;
+    text-align: center;
+    /* margin-top: 30px; */
+}
+  
+.overlay a {
+    font-family:'Open Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: large;
+    color: #FFFBEA;
+    padding: 10px;
+    display: block;
+    transition: 0.3s;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    color: #E01F26;
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    right: 0.75rem;
+    font-size: 3rem;
+}
+
+/* form to contact us (edited) */
+.contact-us {
+    background-color:#FFFBEA;
+    font-family: 'Panchang', 'Open Sans', sans-serif;
+    color: #2D2D2D;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4.5rem;
+    padding-right: 4rem;
+    font-size: 1.5rem;
+    margin-top: -3.85rem;
+}
+
+
+/* --------- social media bar ----------- */
+
+.icon-bar {
+
+    background-color: #2D2D2D;
+  
+    display: flex; 
+    align-items: center;
+    left: 50%;
+    /* transform: translateX(-50%); */
+}
+  
+.icon-bar a {
+    display: block;
+    flex: auto;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: #FFFBEA;
+    font-size: 150%;
+}
+  
+.icon-bar .instagram:hover {
+    background: #FEC20F;
+    color: #2D2D2D;
+}
+  
+.icon-bar .facebook:hover {
+    background: #045A70;
+    color: #FFFBEA;
+}
+  
+.icon-bar .twitter:hover {
+    /* background: #2D2D2D; */
+    background: #E01F26;
+}
+  
+.icon-bar .tiktok:hover {
+    background: #FFFBEA;
+    color: #2D2D2D;
+}
+  
+.icon-bar .linktree:hover {
+    background: #029B83;
+    color: white;
+}
+  
+.content {
+    margin-left: 75px;
+    font-size: 30px;
+}
+  
+@media screen and (max-width: 800px) {
+    #logo {
+      float: left;
+      max-height: 90%;
+    }
+    
+    #bmenu {
+      font-size: 2.5rem;
+    }
+  
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  
+    #logoGif {
+      width: 100vw; 
+      height: auto;
+    }
+  
+    #catalogueIMG {
+      max-width: 50%; 
+      height: auto;
+    }
+  
+    .button-shape {
+      width: 30vh;
+    }
+  
+    .button-text {
+      font-size: medium;
+    }
+}
