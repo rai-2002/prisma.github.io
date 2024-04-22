@@ -257,9 +257,14 @@ h1 {
   color: white;
   /* padding: 12px 30px; */
   cursor: pointer;
-  /* font-size: 20px;
-  display: block; */
-  border-radius: 10%;
+  /* font-size: 20px; */
+  /* display: block; */
+  border-radius: 12px;
+}
+
+.btn h1 {
+  margin-left: 2%;
+  text-align: center;
 }
 
 .btn:hover {
