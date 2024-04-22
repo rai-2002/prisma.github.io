@@ -4,8 +4,7 @@
   $information = $_POST['information'];
 
   // Set the email recipient and subject
-  $mailheader = "From:" .$email;
-  $recipient = "gab.gg98@gmail.com";
+  $to = 'gabrielle.gauci.16@um.edu.mt';
   $subject = 'Form submission';
 
   // Create the email message
@@ -13,7 +12,9 @@
   $message.= "Comment: $information\n";
 
   // Send the email
-  mail($recipient, $subject, $message) or die("Error!");
+  mail($to, $subject, $message);
 
-  echo'Message Sent';
+  // Redirect the user to a thank-you page
+  header('Location: contact_us.html');
+  exit;
 ?>
