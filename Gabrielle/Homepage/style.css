@@ -322,23 +322,6 @@ h1 {
 .button-shape.no-shadow {
   filter: none; /* Remove drop shadow when this class is applied */
 }
-
-/* form to contact us (edited) */
-.contact-us {
-  background-color:#FFFBEA;
-  color: #2D2D2D;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 10%;
-  padding-bottom:10%;
-  padding-left: 4.5rem;
-  padding-right: 4rem;
-  font-size: 3rem;
-}
-/* form to contact us */
   
 /* --------- social media bar ----------- */
 

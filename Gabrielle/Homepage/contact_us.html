@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="brands.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="contact_us.css">
     <script src="https://kit.fontawesome.com/f1d0954713.js" crossorigin="anonymous"></script>
     
     <title>PRISMA</title>
@@ -42,17 +42,20 @@
 <div class="contact-us">
     <p>We would love to hear back from you!</p>
 
-    <form>
+    <form class="form">
         <div class="email">
             <label for="email">Email address</label>
-            <input type="email" class="form-control" name="email" placeholder="bfaexhibition@email.com" required>
+            <br>
+            <input type="email" class="form-control" id="email" name="email" placeholder="bfaexhibition@email.com" required>
         </div>
+        <br>
         <div class="comment">
             <label for="text2" class="form-label">Leave a comment here</label>
-            <input type="text" class="form-control" name="information" id="text2" required>
+            <br>
+            <textarea class="form-control" id="text2" name="information" required></textarea>
         </div>
-        <div>
-            <input class="Submit" type="Submit" value="Submit">
+        <div class="submit_btn">
+            <input class="Submit" type="submit" value="Submit">
         </div>
     </form>
 </div>
