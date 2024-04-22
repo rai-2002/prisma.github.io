@@ -252,18 +252,18 @@ h1 {
 
 /*Download button - edited*/
 .btn {
-  background-color: #E01F26;
+  background-color: #2D2D2D;
   border: none;
   color: white;
   /* padding: 12px 30px; */
   cursor: pointer;
   /* font-size: 20px;
   display: block; */
-  margin-right: -1.5rem;
+  border-radius: 10%;
 }
 
 .btn:hover {
-  background-color: #E01F26;
+  background-color: white;
   color: black;
 }
 
