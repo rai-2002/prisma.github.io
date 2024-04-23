@@ -11,9 +11,9 @@ window.addEventListener('scroll', function() {
   
     if (scrollPosition >= contactSectionTop && scrollPosition < contactSectionTop + contactSectionHeight) {
         navbar.style.color = '#FFFBEA'; // Change text color if needed
-        logoSVG.src = 'logo-w.png'; // Change the image file for the SVG
+        logoSVG.src = 'assets/logo-w.png'; // Change the image file for the SVG
     } else {
         navbar.style.color = '#E01F26'; // Default text color when not over contact section
-        logoSVG.src = 'logo-r.png'; // Default image file for the SVG
+        logoSVG.src = 'assets/logo-r.png'; // Default image file for the SVG
     }
   });

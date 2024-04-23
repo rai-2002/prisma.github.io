@@ -216,7 +216,7 @@ h3 {
 /*  gallery */
 .gallery {
   background-color: #2D2D2D;
-  padding: 0rem 2rem;
+  padding: 0rem 2.5rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -224,28 +224,45 @@ h3 {
   justify-content: center;
 }
 
-.gallery-item {
-  position:relative;
-  z-index: 1;
-}
-
 .gallery-start {
   padding-bottom: 100vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem; 
+  gap: 3rem; 
+  text-align: center;
+
 }
 
 @media screen and (max-width: 768px) {
   .gallery-start {
-      grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
+}
+
+#projects-title {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.gallery-item {
+  position:relative;
+  z-index: 1;
 }
 
 .gallery-item img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.506));
+}
+
+@media screen and (min-width: 700px) { 
+  #project-gallery {
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 5rem;
+    padding-right: 5rem;
+    /* padding: 5rem; */
+  }
 }
 
 /* catalogue */
