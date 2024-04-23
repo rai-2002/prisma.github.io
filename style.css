@@ -1,42 +1,13 @@
-
 @font-face {
   font-family: 'Panchang';
   src: url('Panchang-Variable.woff2') format('woff2'),
        url('Panchang-Variable.woff') format('woff');
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* ------- scroll bar (to check) -------- */
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 5;
-}
-
-.progress-container {
-  width: 100%;
-  height: 0.5rem;
-}
-
-.progress-bar {
-  height: 0.5rem;
-  background: #FEC20F;
-  width: 0%;
-}
-/* ------- html & h1 (for now okay) -------- */
-
 body, html {
   background: #E01F26;
   font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.1rem;
   color: #FFFBEA;
   margin: 0 auto;
   padding: 0;
@@ -54,6 +25,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: x-large;
+  margin-right: -0.5rem;
 }
 
 h2 {
@@ -65,16 +37,25 @@ h3 {
   text-align: justify;
 }
 
-p {
-  font-family: 'Open Sans', sans-serif;
-  letter-spacing: 0.1rem;
+/* scroll bar */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
 }
 
+.progress-container, .progress-bar {
+  width: 100%;
+  height: 0.5rem;
+}
 
-/* -------- navbar (fixed) ------------ */
+.progress-bar {
+  background: #FEC20F;
+}
+
+/* Navbar */
 .navbar {
-  /* border: solid 2px #029B83; */
-
   color: #E01F26;
   position: fixed;
   width: 100%;
@@ -86,37 +67,35 @@ p {
 
 #logo {
   float: left;
-  max-height: 90%;
-  padding-top: 5px;
+  max-height: 85%;
+  padding-top: 0.5rem;
 }
 
 #bmenu {
-  margin-right: 4vw;
   margin: 0 auto;
   font-size: 3rem; 
   cursor: pointer;
   position: absolute;
-  right: 1rem;
+  right: 0.8rem;
   top: 48%; 
   transform: translateY(-50%); 
 }
 
-/* -------- burger menu overlay (to fix) ------------ */
+/* Burger menu overlay */
 .overlay {
-  height: 100%;
-  width: 100%;
   display: none;
   position: fixed;
   z-index: 9999;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   background-color: #2D2D2D;
   background-size: cover;
 }
 
 .overlay-content {
-  color: #2D2D2D;
-  width: 100%;
+  margin: 0 auto;
   position: relative;
   top: 30%;
   text-align: center;
@@ -125,29 +104,38 @@ p {
 .overlay a {
   font-family:'Open Sans', sans-serif;
   font-weight: bold;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.2rem;
   text-decoration: none;
   text-transform: uppercase;
   font-size: large;
   color: #FFFBEA;
-  padding: 10px;
+  padding: 1rem;
   display: block;
   transition: 0.3s;
+  filter: drop-shadow(0px 4px 2px rgba(0, 0, 0, 0.375));
+}
+
+#contact {
+  color:#E01F26;
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #E01F26;
+  color: #FEC20F;
+  filter: none;
+}
+
+#contact:hover {
+  color:#FEC20F;
 }
 
 .overlay .closebtn {
   position: absolute;
-  right: 0.75rem;
-  font-size: 3rem;
+  right: 0.2rem;
+  font-size: 2.5rem;
 }
 
-
-/* --------- animated logo (fixed) ----------- */
-.logoSection {
+/* Homepage Header */
+.header-layout {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -155,15 +143,21 @@ p {
   height: 100vh;
 }
 
+
 #logoGif {
-  margin-top: -3rem;
-  width: 35rem; 
+  width: 65vh; 
   height: auto;
 }
 
+@media screen and (max-width: 768px) {
+  #logoGif {
+    width: 20rem; 
+  }
+}
+
 #title {
-  margin-right: -1.5rem;
-  margin-top: -3rem;
+  margin-top: -0.5rem;
+  margin-right: -0.5rem;
   font-size: xx-large;
 }
 
@@ -179,7 +173,7 @@ p {
   z-index: 1;
 }
 
-/* ----------- class image (fixed) --------- */
+/* class image */
 .classImage {
   background-image: url(images/class.jpg);
   width: auto;
@@ -193,14 +187,13 @@ p {
   background-size: cover;
 }
 
-/* ----------- about us text (to be updated) --------- */
+/* about us text */
 .about-us {
   background-color:#FFFBEA;
   color: #2D2D2D;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   padding-top: 10%;
   padding-bottom:10%;
@@ -214,9 +207,16 @@ p {
   transition: opacity .2s ease;
 }
 
-/* ----------- project images (to be updated) --------- */
+@media screen and (min-width: 768px) { 
+  .about-us {
+    min-height: 0vh;
+  }
+}
+
+/*  gallery */
 .gallery {
   background-color: #2D2D2D;
+  padding: 0rem 2rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -224,11 +224,31 @@ p {
   justify-content: center;
 }
 
-#projects-title {
-  margin-right: -1.5rem;
+.gallery-item {
+  position:relative;
+  z-index: 1;
 }
 
-/* ----------- catalogue (to be updated) ---------- */
+.gallery-start {
+  padding-bottom: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem; 
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-start {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* catalogue */
 .catalogue {
   background-color:#E01F26;
   min-height: 100vh;
@@ -243,15 +263,16 @@ p {
   height: auto;
 }
 
-#catalogue-title {
-  margin-right: -1.5rem;
+@media screen and (max-width: 768px) {
+  #catalogueIMG {
+    max-width: 50%; 
+  }
 }
 
-/* ----------- contact us (to be updated) --------- */
-
+/* contact us */
 .contact {
   background-color: #2D2D2D;
-  min-height: 100vh;
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -259,64 +280,58 @@ p {
   z-index: 1;
 }
 
+.contact h1{
+  font-family: 'Open Sans', sans-serif;
+  font-size: xx-large;
+  padding-left: 0.5rem;
+  letter-spacing: 0.1rem;
+}
+
 .custom-button {
   position: relative;
-  border: none;
-  background-color: transparent;
-  padding: 0;
+  display: inline-block; /* Change display to inline-block to fit content */
 }
 
 .button-shape {
-  display: block;
   width: 50vh;
   height: auto;
-  background-color: transparent;
-  border: none;
   filter: drop-shadow(5px 8px 0px black);
 }
-  
-.button-text {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  font-size: 3rem;
-  text-transform: uppercase;
-  margin-right: -1.5rem;
-  text-align: center;
 
+@media screen and (max-width: 768px) {
+  .button-shape {
+    width: 30vh;
+  }
+}
+
+.button-text {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #2D2D2D;
 }
 
 .custom-button:hover .button-shape {
+  filter: drop-shadow(5px 8px 0px black);
+}
+
+.custom-button:hover .button-shape {
   content: url('assets/shape-b.png');
-  filter: drop-shadow(5px 8px 0px black); 
 }
 
 .custom-button:hover .button-text {
   color:#FFFBEA;
 }
-
-.button-shape.no-shadow {
-  filter: none; /* Remove drop shadow when this class is applied */
-}
   
 /* --------- social media bar ----------- */
-
 .icon-bar {
-
   background-color: #2D2D2D;
-
   display: flex; 
   align-items: center;
-  left: 50%;
-  /* transform: translateX(-50%); */
 }
 
 .icon-bar a {
-  display: block;
   flex: auto;
   text-align: center;
   padding: 16px;
@@ -336,7 +351,6 @@ p {
 }
 
 .icon-bar .twitter:hover {
-  /* background: #2D2D2D; */
   background: #E01F26;
 }
 
@@ -347,60 +361,18 @@ p {
 
 .icon-bar .linktree:hover {
   background: #029B83;
-  color: white;
+  color: #FFFBEA;
 }
 
-.content {
-  margin-left: 75px;
-  font-size: 30px;
-}
-
-@media screen and (max-width: 800px) {
-  
-  #bmenu {
-    font-size: 2.5rem;
-  }
-
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
-
-  #logoGif {
-    width: 100vw; 
-    height: auto;
-  }
-
-  #catalogueIMG {
-    max-width: 50%; 
-    height: auto;
-  }
-
-  .button-shape {
-    width: 30vh;
-  }
-
-  .button-text {
-    font-size: medium;
-  }
-}
-
-/* Pages */
-
+/* Profiles */
 .profile {
-  /* border: solid 3px lime; */
-
   background-color: #FFFBEA;
   color: #2D2D2D;
   width: 100%;
   height: auto;
 }
 
-.profile-layout {
-  /* border: solid 3px orange; */
-  
+.profile-layout { 
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -416,10 +388,7 @@ p {
   height: 50vh;
 }
 
-/* for desktop screen */
 @media screen and (min-width: 700px) { 
-
-
   #face-pic {
     width: auto;
     height: 60vh; 
@@ -429,7 +398,6 @@ p {
     padding: 2vh;
     padding-bottom: 5vh;
   }
-
 }
 
 .social-icons {
@@ -446,7 +414,6 @@ p {
 
 .social-icon:hover svg {
   fill: #2D2D2D;
-
 }
 
 .statement {
@@ -456,32 +423,89 @@ p {
  background-color: #E01F26;
 }
 
-        /* Gallery container */
-        .gallery-grid {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 10px;
-          justify-content: space-between;
+/* Contact Us */
+.contact-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: #2D2D2D;
+  padding: 20px;
+}
 
-      }
+.contact-image {
+  flex: 1 1 40%; /* Takes up 40% of the flex container, shrinking and growing as needed */
+  max-width: 40%; /* Maximum width of the image container */
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically */
+}
 
-      /* Gallery item */
-      .gallery-item {
-          flex: 0 0 calc(33.33% - 10px); /* Three columns, with 10px gap between them */
-          margin-bottom: 10px;
-          position:relative;
-          z-index: 1;
-      }
+.contact-image img {
+  width: 100%; /* Makes the image fully responsive within its container */
+  height: auto; /* Keeps the image aspect ratio intact */
+}
 
-      /* Responsive layout for smaller screens */
-      @media screen and (max-width: 768px) {
-          .gallery-item {
-              flex: 0 0 calc(100% - 10px); /* One column */
-          }
-      }
+.contact-us {
+  flex: 1 1 60%; /* Takes up 60% of the flex container */
+  max-width: 600px;
+  margin: 0 20px; /* Adds horizontal margin */
+  padding: 2rem;
+  color: #FFFBEA;
+  box-sizing: border-box;
+}
 
-      /* Image styling */
-      .gallery-item img {
-          width: 100%;
-          height: auto;
-      }
+.contact-us h1 {
+  text-align: left;
+}
+
+.contact-us label {
+  display: block;
+  margin-bottom: 5px;
+  opacity: 0.5;
+}
+
+.contact-us input[type="email"],
+.contact-us textarea {
+  background-color: #FFFBEA;
+  font-family: 'Open Sans', sans-serif;
+  font-size: medium;
+  width: calc(100% - 2rem);
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.contact-us textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.contact-us input[type="submit"] {
+  background-color: #E01F26;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-us input[type="submit"]:hover {
+  background-color: #029B83;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-div {
+    flex-direction: column; /* Stacks the items vertically */
+}
+
+.contact-image, .contact-us {
+    flex: 1 1 100%; /* Each takes full width of the container */
+    max-width: 100%; /* Uses full container width */
+    margin: 10px 0; /* Adds vertical margin for spacing */
+}
+}

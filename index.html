@@ -17,13 +17,12 @@
     <div class="header">          
         <div class="progress-container">
         <div class="progress-bar" id="myBar"></div>
-        <script src="java/scrollbar.js"></script>
         </div>  
     </div>
 
 <!-- navbar -->
     <div class="navbar">
-        <a href="#"><img id="logo" src="assets/logo-r.png" alt="logo"></a> 
+        <a href="index.html"><img id="logo" src="assets/logo-r.png" alt="logo"></a> 
         <span id="bmenu" onclick="openNav()">&#9776;</span>
         <div id="w-border">
             <div id="myNav" class="overlay">
@@ -34,18 +33,20 @@
                     <a href="#galleryclass" onclick="closeNav()" class="scrollArrow">Projects</a>
                     <a href="#catalogueclass" onclick="closeNav()" class="scrollArrow">Catalogue</a>
                     <a href="sponsors.html">Sponsors</a>
-                    <a href="contact.html">Contact Us</a>
+                    <a href="contact.html" id="contact">Contact Us</a>
                 </div>
              </div>
         </div>
     </div> <!-- navbar closing tag -->
 
 <!-- logo animation -->
-    <div class="logoSection">
+
+    <div class="header-layout">
         <img id="logoGif" src="assets/logo.gif" alt="animated logo"></a>
         <h1 id="title">PRISMA</h1>
         <a href="#class-sec" class="scrollArrow"><i class="fa-solid fa-chevron-down" id="arrow"></i></a>
     </div>
+
 
 <!-- class image -->
     <div id="class-sec" class="classImage">
@@ -54,11 +55,13 @@
 
 <!-- text -->
     <div id="aboutUs" class="about-us">
-        <p class="text-reveal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est nisi, hendrerit sit amet justo vel, dictum viverra massa. Aenean convallis viverra ligula, ac lobortis risus lobortis sit amet. Quisque accumsan eget mauris elementum viverra. Suspendisse in gravida libero. In et pretium diam. Suspendisse sit amet orci at magna tristique pulvinar. Proin condimentum iaculis urna, ac maximus diam pellentesque finibus. Integer volutpat nec nunc sit amet viverra. Aenean ac faucibus eros. Nunc at ipsum eget neque interdum iaculis tempor vitae felis. Sed vitae orci non mauris rhoncus consectetur. Duis enim neque, elementum eu est quis, gravida dictum turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        <!-- <h2>About Prisma</h2> -->
+        <p class="text-reveal"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed dignissim ligula vel justo tempor tincidunt. Integer sit amet est ac nisi fermentum congue. Phasellus varius nunc at velit dignissim, sed commodo odio convallis. Duis ac ipsum vel elit commodo scelerisque. Morbi in turpis et est lobortis hendrerit. Vivamus ac ullamcorper libero. Proin pretium dolor eu eros ultricies, at fermentum velit consequat. In bibendum arcu vel velit dignissim, nec elementum lorem efficitur. Suspendisse sit amet magna consequat, varius justo ac, cursus ligula.
+        </p>
     </div>
 
 <!-- gallery -->
-    <div id="galleryclass" class="gallery">
+    <div id="galleryclass">
         <div class="gallery">
             <div class="start-trig"></div>
             <div class="gallery">
@@ -68,22 +71,49 @@
                 <div class="gallery-start">
                     <!-- Repeat this block for each image -->
                     <div class="gallery-item">
-                        <img src="images/s1.png" alt="Image 1">
+                        <a href="Dorianne/Individual Page/index.html">
+                            <img src="images/class.jpg" alt="Image 1">
+                        </a>
                     </div>
                     <div class="gallery-item">
-                        <img src="images/s2.png" alt="Image 2">
+                        <a href="your_link_here">
+                            <img src="images/s2.png" alt="Image 2">
+                        </a>
                     </div>
                     <div class="gallery-item">
-                        <img src="images/s3.png" alt="Image 2">
+                        <a href="your_link_here">
+                            <img src="images/s3.png" alt="Image 3">
+                        </a>
                     </div>
                     <div class="gallery-item">
-                        <img src="profile.jpg" alt="Image 2">
+                        <a href="your_link_here">
+                            <img src="images/s1.png" alt="Image 1">
+                        </a>
                     </div>
                     <div class="gallery-item">
-                        <img src="profile.jpg" alt="Image 2">
+                        <a href="your_link_here">
+                            <img src="images/s2.png" alt="Image 2">
+                        </a>
                     </div>
                     <div class="gallery-item">
-                        <img src="profile.jpg" alt="Image 2">
+                        <a href="your_link_here">
+                            <img src="images/s3.png" alt="Image 3">
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="your_link_here">
+                            <img src="images/s1.png" alt="Image 1">
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="your_link_here">
+                            <img src="images/s2.png" alt="Image 2">
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="your_link_here">
+                            <img src="images/s3.png" alt="Image 3">
+                        </a>
                     </div>
                 </div>
             </section>
@@ -101,7 +131,7 @@
     <div class="contact">
         <a href="contact.html" class="custom-button" id="myButton">
             <img src="assets/shape-w.png" alt="Button Shape" class="button-shape">
-            <span class="button-text">Say Hello</span>
+            <h1 class="button-text">Click Here</h1>
         </a>
     </div>
 
@@ -116,6 +146,7 @@
 
 <!-- end -->
     <script src="java/main.js"></script>
+    <script src="java/smoothScroll.js"></script>
     <script src="java/scroll.js"></script>
     <script src="java/navbarScroll.js"></script>
 
