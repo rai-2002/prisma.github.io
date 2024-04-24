@@ -142,6 +142,7 @@ h3 {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100%;
 }
 
 
@@ -356,6 +357,7 @@ h3 {
   transition: all 0.3s ease;
   color: #FFFBEA;
   font-size: 150%;
+  height: 2rem;
 }
 
 .icon-bar .instagram:hover {
@@ -443,13 +445,14 @@ h3 {
 
 /* Contact Us */
 .contact-div {
+  /* border: greenyellow solid 2px; */
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  min-height: 93vh;
   background-color: #2D2D2D;
-  padding: 20px;
 }
 
 .contact-image {
@@ -461,49 +464,76 @@ h3 {
 }
 
 .contact-image img {
-  width: 100%; /* Makes the image fully responsive within its container */
-  height: auto; /* Keeps the image aspect ratio intact */
+  width: calc(80% - 2rem);
+  height: auto; 
+  filter: drop-shadow(2px 2px 0 #FFFBEA)
+          drop-shadow(-2px 2px 0 #FFFBEA)
+          drop-shadow(2px -2px 0 #FFFBEA)
+          drop-shadow(-2px -2px 0 #FFFBEA); 
 }
 
-.contact-us {
+.contact-form {
+  /* border: red solid 1px; */
+
   flex: 1 1 60%; /* Takes up 60% of the flex container */
-  max-width: 600px;
-  margin: 0 20px; /* Adds horizontal margin */
-  padding: 2rem;
+  max-width: 40vw;
   color: #FFFBEA;
   box-sizing: border-box;
+  padding: 0 2rem 2rem 2rem;
+
 }
 
-.contact-us h1 {
+.contact-form h1 {
   text-align: left;
 }
 
-.contact-us label {
+.contact-form label {
   display: block;
   margin-bottom: 5px;
   opacity: 0.5;
 }
 
-.contact-us input[type="email"],
-.contact-us textarea {
+@media screen and (max-width: 768px) {
+  .contact-image, .contact-form, .contact-form h1 {
+    flex: 1 1 100%; 
+    max-width: 70vw;
+    text-align: center; 
+    font-size: medium;
+
+  }
+  .contact-image {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    /* max-width: 50%; */
+  }
+
+  .contact-form label {
+    text-align: left;
+    font-size: small;
+  }
+}
+
+.contact-form input[type="email"],
+.contact-form textarea {
   background-color: #FFFBEA;
   font-family: 'Open Sans', sans-serif;
-  font-size: medium;
-  width: calc(100% - 2rem);
+  font-size: small;
+  width: 100%;
+  /* width: calc(100% - 2rem); */
   padding: 1rem;
   border-radius: 4px;
   margin-bottom: 20px;
   box-sizing: border-box;
 }
 
-.contact-us textarea {
+.contact-form textarea {
   height: 120px;
   resize: vertical;
 }
 
-.contact-us input[type="submit"] {
+.contact-form input[type="submit"] {
   background-color: #E01F26;
-  color: white;
+  color: #FFFBEA;
   border: none;
   padding: 10px 20px;
   text-transform: uppercase;
@@ -512,18 +542,7 @@ h3 {
   transition: background-color 0.3s ease;
 }
 
-.contact-us input[type="submit"]:hover {
+.contact-form input[type="submit"]:hover {
   background-color: #029B83;
 }
 
-@media screen and (max-width: 768px) {
-  .contact-div {
-    flex-direction: column; /* Stacks the items vertically */
-}
-
-.contact-image, .contact-us {
-    flex: 1 1 100%; /* Each takes full width of the container */
-    max-width: 100%; /* Uses full container width */
-    margin: 10px 0; /* Adds vertical margin for spacing */
-}
-}
