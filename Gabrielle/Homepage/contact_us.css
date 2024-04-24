@@ -102,10 +102,19 @@ body, html {
 }
 
 /* form to contact us (edited) */
+textarea {
+    margin-top: 1rem;
+    border: none;
+    border-radius: 12px;
+    width: 25.5rem;
+    height: 10rem;
+    resize: none;
+}
+
 .contact-us {
-    background-color:#FFFBEA;
+    background-color: #2D2D2D;
     font-family: 'Panchang', 'Open Sans', sans-serif;
-    color: #2D2D2D;
+    color: #FFFBEA;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -114,16 +123,45 @@ body, html {
     padding-left: 4.5rem;
     padding-right: 4rem;
     font-size: 1.5rem;
-    margin-top: -3.85rem;
 }
 
+input[type=email] {
+    border: none;
+    border-radius: 5px;
+    width: 14.8rem;
+    height: 1.5rem;
+}
+
+input[type=submit] {
+    background-color: #FFFBEA;
+    border: none;
+    color: #2D2D2D;
+    margin-top: 1rem;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: 12px;
+}
+
+input[type=submit]:hover {
+    background-color: #E01F26;
+    border: none;
+    color: #FFFBEA;
+    margin-top: 1rem;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: 12px;
+}
+
+.input:focus {
+    border:1px solid #E01F26;
+}
 
 /* --------- social media bar ----------- */
 
 .icon-bar {
 
     background-color: #2D2D2D;
-  
+    margin-top: -3.85rem;
     display: flex; 
     align-items: center;
     left: 50%;
