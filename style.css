@@ -14,10 +14,6 @@ body, html {
   height: 100%;
 }
 
-a {
-  cursor: pointer;
-}
-
 h1, h2, h3 {
   font-family: 'Panchang', 'Open Sans', sans-serif;
   line-height: 1.3;
@@ -220,7 +216,6 @@ h3 {
 
 .text-reveal {
   text-align: justify;
-
 }
 
 /* gallery */
@@ -236,15 +231,20 @@ h3 {
 
 .gallery-start {
   padding-bottom: 100vh;
+  background-color: #2D2D2D;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3rem; 
+  gap: 2rem; 
   text-align: center;
 }
 
 @media screen and (max-width: 768px) {
   .gallery-start {
     grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  .gallery {
+    padding: 0;
   }
 }
 
@@ -257,14 +257,66 @@ h3 {
 .gallery-item {
   position:relative;
   z-index: 1;
+  display: inline-block;
+  margin: 10px;
+  /* overflow: hidden; */
 }
 
 .gallery-item img {
-  width: 100%;
+  width: 90%;
   height: auto;
   border-radius: 10px;
   filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.506));
 }
+
+.gallery-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.student-name {
+  position: absolute;
+  padding: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  color: #FFFBEA;
+  font-size: 1rem;
+  filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.506));
+}
+
+
+.gallery-item .gallery-image {
+  transition: transform 0.5s ease-out;
+}
+
+/* Hover effect */
+.gallery-item:hover .gallery-image {
+  transform: scale(1.1);
+}
+
+/* Overlay text */
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item:hover .gallery-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+
 
 
 /* catalogue */
@@ -496,6 +548,7 @@ h3 {
 
 #projects-title {
   max-width: 50vw;
+  transform: translate(0);
 }
 
 h4 {
