@@ -88,25 +88,65 @@
             <div class="gallery-start" id="project-gallery">
                 <!-- Repeat this block for each image -->
                 <div class="gallery-item">
-                    <img src="projects-pages/Gabrielle/1 (main img with name).png" alt="Image 1">
+                    <img src="projects-pages/Gabrielle/1 (main img with name).png" onclick="openModal();currentSlide(1)" alt="Image 1">
                 </div>
                 <div class="gallery-item">
-                    <img src="projects-pages/Gabrielle/2.png" alt="Image 2">
+                    <img src="projects-pages/Gabrielle/2.png" onclick="openModal();currentSlide(2)" alt="Image 2">
                 </div>
                 <div class="gallery-item">
-                    <img src="projects-pages/Gabrielle/3.png" alt="Image 3">
+                    <img src="projects-pages/Gabrielle/3.png" onclick="openModal();currentSlide(3)" alt="Image 3">
                 </div>
                 <div class="gallery-item">
-                    <img src="projects-pages/Gabrielle/4.png" alt="Image 4">
+                    <img src="projects-pages/Gabrielle/4.png" onclick="openModal();currentSlide(4)" alt="Image 4">
                 </div>
                 <div class="gallery-item">
-                    <img src="projects-pages/Gabrielle/5.png" alt="Image 5">
+                    <img src="projects-pages/Gabrielle/5.png" onclick="openModal();currentSlide(5)" alt="Image 5">
                 </div>
                 <div class="gallery-item">
-                    <img src="projects-pages/Gabrielle/6.png" alt="Image 6">
+                    <img src="projects-pages/Gabrielle/6.png" onclick="openModal();currentSlide(6)" alt="Image 6">
                 </div>
                 <div class="gallery-item">
                     <h3>link here</h3>
+                </div>
+            </div>
+
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+              
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="projects-pages/Gabrielle/1 (main img with name).png" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="projects-pages/Gabrielle/2.png" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="projects-pages/Gabrielle/3.png" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="projects-pages/Gabrielle/4.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="projects-pages/Gabrielle/5.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 6</div>
+                        <img src="projects-pages/Gabrielle/6.png" style="width:100%">
+                    </div>
+                
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
             </div>
         </section>
@@ -147,25 +187,34 @@
 </script>
 
 <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-    
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("myImg");
-    var modalImg = document.getElementById("img01");
-    var captionText = document.getElementById("caption");
-    img.onclick = function(){
-      modal.style.display = "block";
-      modalImg.src = this.src;
-      captionText.innerHTML = this.alt;
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
     }
     
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
     
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-      modal.style.display = "none";
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
     }
 </script>
 
