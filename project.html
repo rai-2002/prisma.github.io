@@ -83,28 +83,73 @@
             <div class="gallery-start" id="project-gallery">
                 <!-- Repeat this block for each image -->
                 <div class="gallery-item">
-                    <img src="images/img1.jpg" alt="Image 1">
+                    <img src="images/img1.jpg" onclick="openModal();currentSlide(1)" alt="Image 1">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/img2.jpg" alt="Image 2">
+                    <img src="images/img2.jpg" onclick="openModal();currentSlide(2)" alt="Image 2">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/img3.jpg" alt="Image 2">
+                    <img src="images/img3.jpg" onclick="openModal();currentSlide(3)" alt="Image 2">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/s3.png" alt="Image 2">
+                    <img src="images/s3.png" onclick="openModal();currentSlide(4)" alt="Image 2">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/s1.png" alt="Image 2">
+                    <img src="images/s1.png" onclick="openModal();currentSlide(5)" alt="Image 2">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/s2.png" alt="Image 2">
+                    <img src="images/s2.png" onclick="openModal();currentSlide(6)" alt="Image 2">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/s3.png" alt="Image 2">
+                    <img src="images/s3.png" onclick="openModal();currentSlide(7)" alt="Image 2">
                 </div>
                 <div class="gallery-item">
                     <h3>link here</h3>
+                </div>
+            </div>
+
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+              
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 7</div>
+                        <img src="images/img1.jpg" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 7</div>
+                        <img src="images/img2.jpg" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 7</div>
+                        <img src="images/img3.jpg" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 7</div>
+                        <img src="images/s3.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 7</div>
+                        <img src="images/s1.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 7</div>
+                        <img src="images/s2.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">7 / 7</div>
+                        <img src="images/s3.png" style="width:100%">
+                    </div>
+                
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
             </div>
         </section>
@@ -142,6 +187,38 @@
            // markers: true
         }
     });
+</script>
+
+<script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+    }
 </script>
 
 </body>
