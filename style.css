@@ -2,6 +2,8 @@
   font-family: 'Panchang';
   src: url('Panchang-Variable.woff2') format('woff2'),
        url('Panchang-Variable.woff') format('woff');
+       font-weight: bold;
+       font-style: normal;
 }
 
 body, html {
@@ -18,7 +20,6 @@ h1, h2, h3 {
   font-family: 'Panchang', 'Open Sans', sans-serif;
   line-height: 1.3;
   letter-spacing: 0.5rem;
-  font-weight: bold;
   text-transform: uppercase;
   text-align: center;
 }
@@ -37,6 +38,11 @@ h3 {
   text-align: justify;
 }
 
+.bodytext-container { 
+  text-align: justify;
+  padding: 4rem 4.5rem 4rem 4.5rem;
+}
+
 /* scroll bar */
 .header {
   position: fixed;
@@ -52,7 +58,7 @@ h3 {
 
 .progress-bar {
   background: #FEC20F;
-  width: 0%;
+  width: 0;
 }
 
 /* Navbar */
@@ -61,7 +67,6 @@ h3 {
   position: fixed;
   width: 100%;
   height: 5rem;
-  box-sizing: border-box;
   top: 0;
   z-index: 999;
 }
@@ -196,10 +201,7 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 10%;
-  padding-bottom:10%;
-  padding-left: 4.5rem;
-  padding-right: 4rem;
+  padding: 10% 4rem 10% 4.5rem;
   font-size: 2rem;
 }
 
@@ -210,7 +212,7 @@ h3 {
 
 @media screen and (min-width: 768px) { 
   .about-us {
-    min-height: 0vh;
+    min-height: 0;
   }
 }
 
@@ -221,7 +223,7 @@ h3 {
 /* gallery */
 .gallery {
   background-color: #2D2D2D;
-  padding: 0rem 2.5rem;
+  padding: 0 5rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -234,7 +236,9 @@ h3 {
   background-color: #2D2D2D;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem; 
+  gap: 2rem;
+  -webkit-gap: 2rem;
+  -moz-gap: 2rem; 
   text-align: center;
 }
 
@@ -242,6 +246,8 @@ h3 {
   .gallery-start {
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
+    -webkit-gap: 1rem;
+    -moz-gap: 1rem;
   }
   .gallery {
     padding: 0;
@@ -456,8 +462,8 @@ h3 {
   color: #FFFBEA;
 }
 
-/* Profiles */
-.profile {
+/* Individual Pages */
+.white-container {
   background-color: #FFFBEA;
   color: #2D2D2D;
   width: 100%;
@@ -480,15 +486,14 @@ h3 {
   height: 45vh;
 }
 
-@media screen and (min-width: 700px) { 
-  #face-pic {
-    width: auto;
-    height: 60vh; 
-  }
-
+@media screen and (min-width: 768px) { 
   .profile-layout {
     padding: 2vh;
     padding-bottom: 5vh;
+  }
+  #face-pic {
+    width: auto;
+    height: 60vh; 
   }
 }
 
@@ -509,28 +514,41 @@ h3 {
 }
 
 .statement {
- font-size: medium;
- text-align: justify;
- padding: 4rem 4.5rem 4rem 4.5rem;
- color:#FFFBEA;
- background-color: #E01F26;
- margin: 0 auto
+  margin: 0 auto
 }
 
 @media screen and (min-width: 768px) { 
   .statement {
     max-width: 50vw;
   }
-
-  #project-gallery {
-    grid-template-columns: repeat(1, 1fr);
-    padding-left: 10rem;
-    padding-right: 10rem;
-  }
 }
 
+.title-project {
+  font-family: 'Panchang', 'Open Sans', sans-serif;
+  line-height: 1.3;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: large;
+  padding: 2rem;
+  opacity: .5;
+}
+
+
 #project-gallery {
+  grid-template-columns: repeat(1, 1fr);
+  padding: 0 4.5rem;
   padding-bottom: 0;
+}
+
+@media screen and (min-width: 768px) { 
+  .title-project {
+    max-width: 50vw;
+  }
+
+  #project-gallery {
+    padding: 0 10rem;
+  }
 }
 
 .project-image img {
@@ -546,19 +564,27 @@ h3 {
   }   
 }
 
-#projects-title {
+/* #projects-title {
   max-width: 50vw;
   transform: translate(0);
-}
+} */
 
-h4 {
+.redbutton-link {
   background-color: #E01F26;
+  color: #FFFBEA;
+  text-decoration: none;
   margin: 0 auto;
   text-align: center;
   padding: 1rem;
   width: 15rem;
   border-radius: 10px;
   filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.506));
+  transition: background-color 0.3s ease;
+
+}
+
+.redbutton-link:hover {
+  background-color: #029B83;
 }
 
 /* The Modal (background) - Gab */
