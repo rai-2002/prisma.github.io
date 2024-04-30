@@ -198,16 +198,21 @@ h3 {
 }
 
 /* about us text */
+#text-background {
+  background-color: #FFFBEA;
+}
+
 .about-us {
   color: #2D2D2D;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: x-large;
+  font-size: 2rem;
   margin: 0 auto;
   padding: 0;
 }
+
 
 .about-us span {
   opacity: .1;
@@ -448,225 +453,6 @@ h3 {
   background: #029B83;
   color: #FFFBEA;
 }
-
-/* Individual Pages */
-.white-container {
-  background-color: #FFFBEA;
-  color: #2D2D2D;
-  width: 100%;
-  height: 100vh;
-}
-
-.profile-layout { 
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding: 10vh;
-}
-
-#face-pic {
-  display: block;
-  width: auto; 
-  height: 30vh;
-}
-
-@media screen and (min-width: 768px) { 
-  .profile-layout {
-    padding: 2vh;
-    padding-bottom: 5vh;
-  }
-  #face-pic {
-    width: auto;
-    height: 50vh; 
-  }
-}
-
-.social-icons {
-  margin: 1rem;
-  letter-spacing: 0.5rem;
-  color:#045A70;
-  text-align: center;
-}
-
-.social-icon svg {
-  fill: #029B83;
-  transition: fill 0.3s ease; 
-}
-
-.social-icon:hover svg {
-  fill: #2D2D2D;
-}
-
-.statement {
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 768px) { 
-  .statement {
-    max-width: 50vw;
-  }
-}
-
-.title-project {
-  font-family: 'Panchang', 'Open Sans', sans-serif;
-  line-height: 1.3;
-  letter-spacing: 0.5rem;
-  text-transform: uppercase;
-  text-align: center;
-  /* font-size: large; */
-  /* padding: 2rem; */
-  opacity: .5;
-}
-
-
-#project-gallery {
-  grid-template-columns: repeat(1, 1fr);
-  padding: 0 1rem;
-  padding-bottom: 0;
-}
-
-@media screen and (min-width: 768px) { 
-  .title-project {
-    max-width: 50vw;
-  }
-
-  #project-gallery {
-    padding: 0 10rem;
-  }
-}
-
-.project-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.506));
-} 
-
-@media screen and (min-width: 768px) { 
-  .project-image img {
-    width: 80%;
-  }   
-}
-
-/* #projects-title {
-  max-width: 50vw;
-  transform: translate(0);
-} */
-
-.redbutton-link {
-  background-color: #E01F26;
-  color: #FFFBEA;
-  text-decoration: none;
-  margin: 0 auto;
-  text-align: center;
-  padding: 1rem;
-  width: 15rem;
-  border-radius: 10px;
-  filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.506));
-  transition: background-color 0.3s ease;
-
-}
-
-.redbutton-link:hover {
-  background-color: #029B83;
-}
-
-/* The Modal (background) - Gab */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  /* background-color: #2D2D2D; */
-  background-color: black;
-  /* background-color: rgba(0, 0, 0, 0.719); */
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
-
-.mySlides img {
-  object-fit: contain; /* or cover, depending on your desired behavior */
-  width: 100%;
-  height: 80vh;
-}
-
-/* The Close Button */
-.close {
-  color: #E01F26;
-  position: fixed;
-  top: 10px;
-  right: 25px;
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Hide the slides by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 1rem;
-  margin-top: -50px;
-  color: #FFFBEA;
-  font-weight: bold;
-  font-size: 2rem;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/6 etc) */
-.numbertext {
-  color: #FFFBEA;
-  font-size: small;
-  padding: 8px 12px;
-  position: fixed;
-  top: 93%;
-  left: 48.5%;
-}
-/* The Modal - end - Gab */
-
 
 /* Contact Us */
 .contact-div {
