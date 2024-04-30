@@ -39,7 +39,7 @@ h3 {
 }
 
 .bodytext-container { 
-  text-align: justify;
+  /* text-align: justify; */
   padding: 4rem 4.5rem 4rem 4.5rem;
 }
 
