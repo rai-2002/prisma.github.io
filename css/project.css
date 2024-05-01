@@ -20,13 +20,13 @@
   #face-pic {
     display: block;
     width: auto; 
-    height: 30vh;
+    height: 40%;
   }
   
   @media screen and (min-width: 768px) { 
     #face-pic {
       width: auto;
-      height: 50vh; 
+      height: 55vh; 
     }
   }
   
@@ -95,11 +95,14 @@
     background-color: #029B83;
   }
   
-  
   #project-gallery {
     grid-template-columns: repeat(1, 1fr);
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
     padding-bottom: 0;
+  }
+
+  .title-project {
+    max-width: 80vw;
   }
   
   @media screen and (min-width: 768px) { 
@@ -108,7 +111,7 @@
     }
   
     #project-gallery {
-      padding: 0 10rem;
+      padding: 0 5%;
     }
   }
   
@@ -124,12 +127,6 @@
       width: 80%;
     }   
   }
-  
-  /* #projects-title {
-    max-width: 50vw;
-    transform: translate(0);
-  } */
-  
   
   /* The Modal (background) - Gab */
   .modal {
