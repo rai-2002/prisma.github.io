@@ -352,18 +352,30 @@ h3 {
   height: auto;
 }
 
-/*Download button - edited*/
+/*Download button - edited - Gab*/
 .btn {
-  background-color: #2D2D2D;
+  /* background-color: #2D2D2D;
   border: none;
   color: white;
   cursor: pointer;
-  border-radius: 12px;
+  border-radius: 12px; */
+
+  background-color: #2D2D2D;
+  color: #FFFBEA;
+  text-decoration: none;
+  margin: 0 auto;
+  width: 15rem;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.506));
+  transition: background-color 0.3s ease;
+  text-align: center;
 }
 
 .btn:hover {
-  background-color: white;
-  color: black;
+  /* background-color: white;
+  color: black; */
+
+  background-color: #FEC20F;
 }
 
 @media screen and (max-width: 768px) {
