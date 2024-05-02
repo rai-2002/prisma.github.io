@@ -45,6 +45,12 @@
   .social-icon:hover svg {
     fill: #2D2D2D;
   }
+
+  /* web svg edited - Gab */
+  #Layer_1:hover {
+    stroke: #2D2D2D;
+  }
+  /* web svg edited - Gab - end*/
   
   @media screen and (min-width: 768px) { 
     .statement {
