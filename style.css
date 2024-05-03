@@ -15,8 +15,6 @@ body, html {
   margin: 0 auto;
   padding: 0;
   height: 100%;
-  text-align: center;
-
 }
 
 h1, h2, h3 {
@@ -24,6 +22,7 @@ h1, h2, h3 {
   line-height: 1.5;
   letter-spacing: 0.5rem;
   text-transform: uppercase;
+  text-align: center;
 }
 
 h1 {
