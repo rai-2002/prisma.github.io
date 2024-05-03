@@ -568,4 +568,6 @@ h3 {
 
 /* Sponsor page */
 
-
+.scrollbutton {
+  opacity: 50%;
+}
