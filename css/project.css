@@ -21,8 +21,8 @@
     display: block;
     /* max-width: 100%;
     height: auto; */
-    width: 100%; 
-    height: auto;
+    width: auto; 
+    height: 40vh;
   }
 
   .profile-layout span {
@@ -57,6 +57,10 @@
 
   .social-bar a:hover {
     color: #2D2D2D;
+  }
+
+  .statement {
+    text-align: left;
   }
   
   @media screen and (min-width: 768px) { 
