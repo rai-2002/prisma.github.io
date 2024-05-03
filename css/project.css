@@ -29,8 +29,27 @@
       height: 55vh; 
     }
   }
+
+  .social-bar {
+    display: flex; 
+    align-items: center;
+  }
   
-  .social-icons {
+  .social-bar a {
+    flex: auto;
+    padding: 0 .5rem;
+    transition: all 0.3s ease;
+    color: #029B83;
+    font-size: 150%;
+  }
+
+  .social-bar a:hover {
+    color: #2D2D2D;
+  }
+
+
+  
+  /* .social-icons {
     margin: 1rem;
     letter-spacing: 0.5rem;
     color:#045A70;
@@ -44,7 +63,7 @@
   
   .social-icon:hover svg {
     fill: #2D2D2D;
-  }
+  } */
 
   /* web svg edited - Gab */
   #Layer_1:hover {
