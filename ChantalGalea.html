@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dorianne Attard, a graphic designer, UX/IU designer and visual artist that tackles the concept of adult play for her dissertation project in Prisma 2024, exhibited at University of Malta ">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>PRISMA: Chantal Galea</title>
+    <meta data-rh="true" property="g:image" content="https://prisma-bfa.github.io/preview.png">
+    <link rel="image_src" type="image/jpeg" href="https://prisma-bfa.github.io">
+    <link rel="icon" type="image/x-icon" href="assets/fav.svg">
+</head>
+<body>
+    <div class="header">          
+        <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+        </div>  
+    </div>
+
+    <div class="navbar">
+        <a href="index.html"><img id="logo" src="assets/logo-r.png" alt="logo"></a> 
+        <span id="bmenu" onclick="openNav()">&#9776;</span>
+        <div id="w-border">
+            <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">Homepage</a>
+                    <a href="index.html#aboutUs">About Us</a>
+                    <a href="index.html#galleryclass">Projects</a>
+                    <a href="index.html#catalogueclass">Catalogue</a>
+                    <a href="sponsors.html">Sponsors</a>
+                    <a href="contact.html" id="contact">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="white-container">
+        <div class="profile-layout">
+            <h2>Chantal Galea</h2>
+            <img src="projects-pages/Chantal/profile_img.png" alt="Chantal's Profile Picture">
+            <div class="social-bar">
+                <a href="https://www.instagram.com/chantal.galea?igsh=MzNsdWJ4Zmw2ZnM4&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a> 
+                <a href="https://www.facebook.com/share/hgJV5MFTtR3f7T41/?mibextid=LQQJ4d" target="_blank"><i class="fa fa-facebook"></i></a> 
+              <!--  <a href="https://twitter.com/prismabfa" target="_blank"><i class="fab fa-behance"></i></a> 
+                <a href="https://www.tiktok.com/@prisma.bfa" target="_blank"><i class="fa-solid fa-globe"></i></a> -->
+                <a href="mailto:chantalgalea99@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+           <!-- <span>Graphic Designer<br>UX/UI Designer</span> -->
+        </div>
+    </div> 
+
+    <div class="bodytext-container">
+        <div class="statement"> 
+            <h3>Artist Statement</h3>
+            <p>Chantal, a multi-disciplinary artist with a traditional art and architecture background and a passion for aviation. During her university studies, she developed a profound interest in 3D design, photography, and installation art. Committed to advancing her artistic pursuits, she aspires to integrate her diverse skill-set and explore innovative avenues within her practice.</p>
+            <p>Chantal's work delves into the complex relationship between flight, art, and the human experience. Through her installation, she documents and reflects on The Art of Flying, aiming to create a space where viewers can visually interpret the connection between flying, aviation history and flying dreams.
+                <br><br>Through the use of photography and weaving, she infuses her personal experiences, merging the physical structure with the psychoanalysis of flying, resulting in a thought-provoking experience that encourages viewers to reflect on their own experiences with flying and inspire them to dream.</p>
+        </div>
+    </div>
+
+    <div class="title-container">
+        <div class="start-trig"></div>
+        <div class="project-section">
+            <span class="title-project">The Art of Flying</span>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="gallery-start" id="project-gallery">
+            <div class="project-image">
+                <img src="projects-pages/Chantal/img_1.jpg" onclick="openModal();currentSlide(1)" alt="Image 1">
+            </div>
+            <div class="project-image">
+                <img src="projects-pages/Chantal/img_2.jpg" onclick="openModal();currentSlide(2)" alt="Image 2">
+            </div>
+            <div class="project-image">
+                <img src="projects-pages/Chantal/img_3.jpg" onclick="openModal();currentSlide(3)" alt="Image 3">
+            </div>
+            <div class="project-image">
+                <img src="projects-pages/Chantal/img_4.jpg" onclick="openModal();currentSlide(4)" alt="Image 4">
+            </div>
+          <!--  <div class="project-image">
+                <img src="projects-pages/Dorianne/origami_texture.png" onclick="openModal();currentSlide(5)" alt="Image 2">
+            </div>
+            <div class="project-image">
+                <img src="projects-pages/Dorianne/origami_sidecloseup1.png" onclick="openModal();currentSlide(6)" alt="Image 2">
+            </div>-->
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+            
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="projects-pages/Chantal/img_1.jpg" style="width:100%" alt="Image 1">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="projects-pages/Chantal/img_2.jpg" style="width:100%" alt="Image 2">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="projects-pages/Chantal/img_3.jpg" style="width:100%" alt="Image 3">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="projects-pages/Chantal/img_4.jpg" style="width:100%" alt="Image 4">
+                </div>
+               <!-- <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="projects-pages/Dorianne/origami_texture.png" style="width:100%" alt="Image 1">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="projects-pages/Dorianne/origami_sidecloseup1.png" style="width:100%" alt="Image 1">
+                </div>-->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </div> 
+   <!-- <div class="title-container">
+        <div class="project-section">
+            <span class="title-project">Bridging the Gap between AI and Human Creativity</span>
+            <a href="#" target="_blank" class="redbutton-link">Project Link</a>
+        </div>
+    </div>-->
+
+    <div class="icon-bar">
+        <a href="https://www.instagram.com/prisma.bfa" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a> 
+        <a href="https://www.facebook.com/profile.php?id=61555879661825" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a> 
+        <a href="https://twitter.com/prismabfa" class="twitter" target="_blank"><i class="fab fa-x-twitter"></i></a> 
+        <a href="https://www.tiktok.com/@prisma.bfa" class="tiktok" target="_blank"><i class="fab fa-tiktok"></i></a> 
+        <a href="https://linktr.ee/prisma.bfa" class="linktree" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="m13.736 5.853l4.005-4.117l2.325 2.38l-4.2 4.005h5.908v3.305h-5.937l4.229 4.108l-2.325 2.334l-5.74-5.769l-5.741 5.769l-2.325-2.325l4.229-4.108H2.226V8.121h5.909l-4.2-4.004l2.324-2.381l4.005 4.117V0h3.472zm-3.472 10.306h3.472V24h-3.472z"/></svg></a> 
+    </div>
+
+    <script src="https://kit.fontawesome.com/f1d0954713.js" crossorigin="anonymous"></script>
+    <script src="java/main.js"></script>
+    <script src="java/navbarScrollProject.js"></script>
+    <script src="java/galleryLightbox.js"></script>
+
+</body>
+</html>
