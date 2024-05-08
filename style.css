@@ -7,6 +7,10 @@
   font-display: swap;
 }
 
+
+
+
+
 body, html {
   background: #E01F26;
   font-family: 'Open Sans', sans-serif;
@@ -571,5 +575,4 @@ h3 {
 .scrollbutton {
   opacity: 50%;
 }
-
 
