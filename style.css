@@ -287,6 +287,12 @@ h3 {
   opacity: 0.5;
 }
 
+/* edited - Gab */
+.gallery .gallery-image {
+  width: 80%;
+}
+/* end */
+
 .gallery-item {
   position:relative;
   z-index: 1;
