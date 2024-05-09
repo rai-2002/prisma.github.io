@@ -279,7 +279,7 @@ h3 {
 @media screen and (min-width: 800px) {
   .gallery-start {
     grid-template-columns: repeat(2, 2fr);
-    margin-inline: 5rem;
+    margin-inline: 6rem;
   }
 }
 
