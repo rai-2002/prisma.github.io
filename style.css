@@ -37,6 +37,16 @@ body {
   /* height: 100%; */
 }
 
+h1,
+h2,
+h3 {
+  font-family: var(--ff-pan);
+  line-height: 1.5;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  /* text-align: center; */
+}
+
 /* img {
   display: block;
 } */
@@ -74,7 +84,7 @@ header {
 }
 
 .progress-bar {
-  background: #FEC20F;
+  background: var(--clr-yellow);
   width: 0;
 }
 
@@ -83,8 +93,9 @@ header {
   padding-top: 0.5rem;
   max-width: 4.5rem !important;
 } 
+
 #bmenu {
-  color: var(--clr-red);
+  color: #E01F26;
   margin: 0 auto;
   font-size: 3rem; 
   cursor: pointer;
@@ -93,6 +104,11 @@ header {
   top: 48%; 
   transform: translateY(-50%); 
 }
+
+.white-bmenu {
+  color: var(--clr-white) !important; /* Change color of bmenu to white */
+}
+
 
 /* Burger menu overlay */
 .overlay {
@@ -128,16 +144,16 @@ header {
 }
 
 #contact {
-  color:#E01F26;
+  color: var(--clr-red);
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #FEC20F;
+  color: var(--clr-yellow);
   filter: none;
 }
 
 #contact:hover {
-  color:#FEC20F;
+  color:var(--clr-yellow);
 }
 
 .overlay .closebtn {
@@ -146,7 +162,6 @@ header {
   font-size: 2.5rem;
 }
 
-/* Homepage Header */
 .header-layout {
   background-color: var(--clr-red);
   display: flex;
@@ -156,7 +171,6 @@ header {
   height: 100vh;
   width: 100%;
   margin: 0 auto;
-  /* padding-bottom: 5rem; */
 }
 
 .header-layout img {
@@ -182,7 +196,7 @@ header {
   transform: translateX(-50%);
   font-size: 2rem;
   padding-bottom: 2rem;
-  color: #FFFBEA;
+  color: var(--clr-white);
   filter: drop-shadow(0px 5px 2px rgba(0, 0, 0, 0.183));
   z-index: 1;
 }
@@ -198,6 +212,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-size: xx-large;
 }
 
 .classImage .heading-style {
@@ -209,10 +224,13 @@ header {
 }
 
 /* about us text */
-
 .bodytext-container { 
   padding: 5rem 4.5rem 5rem 4.5rem;
   text-align: justify;
+  background-image: url('assets/yellow-shape-background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about-us {
@@ -220,7 +238,7 @@ header {
   min-height: 100vh;
   font-size: 1.2rem;
   margin: 0 auto;
-  /* padding: 0; */
+
 }
 
 .about-us > p:nth-child(1) {
@@ -263,7 +281,7 @@ header {
 .gallery-start {
   background-color: var(--clr-black);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
   /* grid-template-columns: repeat(1, 1fr); */
   gap: 2.5rem;
   text-align: center;
@@ -293,15 +311,13 @@ header {
   position:relative;
   z-index: 1;
   display: inline-block;
-  /* width: 275px; */
-  /* margin: 10px; */
 }
 
 .gallery-item img {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.506));
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.667));
 }
 
 .gallery-link {
@@ -311,16 +327,13 @@ header {
 }
 
 .student-name {
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   position: absolute;
   padding-bottom: 1rem;
   bottom: 0;
-  /* left: 50%;
-  transform: translate(-50%); */
   letter-spacing: 0.5rem;
   font-size: .75rem;
   margin-inline: .5rem;
-
   filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.81));
 }
 
@@ -411,25 +424,55 @@ header {
 .button-shape {
   width: 300px;
   height: auto;
-  filter: drop-shadow(5px 8px 0px black);
-}
-
-.button-text {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #2D2D2D;
+  filter: drop-shadow(5px 8px 5px black);
+  transition: 0.3s ease;
 }
 
 .custom-button:hover .button-shape {
-  filter: drop-shadow(5px 8px 0px black);
+  filter: drop-shadow(5px 8px 5px black);
 }
 
 .custom-button:hover .button-shape {
   content: url('assets/shape-b.png');
 }
 
-.custom-button:hover .button-text {
-  color:#FFFBEA;
+/* social media bar */
+.icon-bar {
+  background-color: var(--clr-black);
+  display: flex; 
+  align-items: center;
+}
+
+.icon-bar a {
+  flex: auto;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: var(--clr-white);
+  font-size: 150%;
+  height: 2rem;
+}
+
+.icon-bar .instagram:hover {
+  background: var(--clr-yellow);
+  color: var(--clr-black);
+}
+
+.icon-bar .facebook:hover {
+  background: var(--clr-blue);
+  color: var(--clr-white);
+}
+
+.icon-bar .twitter:hover {
+  background: var(--clr-red);
+}
+
+.icon-bar .tiktok:hover {
+  background: var(--clr-white);
+  color: var(--clr-black);
+}
+
+.icon-bar .linktree:hover {
+  background: var(--clr-teal);
+  color: var(--clr-white);
 }
