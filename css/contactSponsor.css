@@ -1,0 +1,103 @@
+/* Contact Us */
+.contact-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 93vh;
+  background-color: #2D2D2D;
+}
+
+.contact-image {
+  flex: 1 1 40%; 
+  max-width: 40%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-image img {
+  width: calc(80% - 2rem);
+  height: auto; 
+  filter: drop-shadow(2px 2px 0 #FFFBEA)
+          drop-shadow(-2px 2px 0 #FFFBEA)
+          drop-shadow(2px -2px 0 #FFFBEA)
+          drop-shadow(-2px -2px 0 #FFFBEA); 
+}
+
+.contact-form {
+  flex: 1 1 60%; /* Takes up 60% of the flex container */
+  max-width: 40vw;
+  color: #FFFBEA;
+  box-sizing: border-box;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.contact-form h1 {
+  text-align: left;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-image, .contact-form, .contact-form h1 {
+    flex: 1 1 100%; 
+    max-width: 70vw;
+    text-align: center; 
+    font-size: medium;
+
+  }
+  .contact-image {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    /* max-width: 50%; */
+  }
+
+  .contact-form label {
+    text-align: left;
+    font-size: small;
+  }
+}
+
+.contact-form input[type="email"],
+.contact-form textarea {
+  background-color: #FFFBEA;
+  font-family: 'Open Sans', sans-serif;
+  font-size: small;
+  width: 100%;
+  /* width: calc(100% - 2rem); */
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #E01F26;
+  color: #FFFBEA;
+  border: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #029B83;
+}
+
+/* Sponsor page */
+
+.scrollbutton {
+  opacity: 50%;
+}

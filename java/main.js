@@ -5,13 +5,17 @@ function openNav() {
 
 /* Close menu */
 function closeNav() {
-    document.getElementById("myNav").style.display = "none";
-  }
+  document.getElementById("myNav").style.display = "none";
+}
 
-function closeNav() {
-    var navOverlay = document.getElementById('myNav');
-    navOverlay.style.display = 'none'; 
-  }
+// function closeNav() {
+//     document.getElementById("myNav").style.display = "none";
+//   }
+
+// function closeNav() {
+//     var navOverlay = document.getElementById('myNav');
+//     navOverlay.style.display = 'none'; 
+//   }
 
   // Top scroll bar
   window.onscroll = function() {myFunction()};
