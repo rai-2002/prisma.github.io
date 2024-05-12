@@ -1,11 +1,11 @@
 .white-container {
-    background-color: #FFFBEA;
-    color: #2D2D2D;
+    color: var(--clr-black);
     width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
   }
   
   .profile-layout { 
@@ -19,8 +19,6 @@
   
   .profile-layout img {
     display: block;
-    /* max-width: 100%;
-    height: auto; */
     width: auto; 
     height: 35vh;
   }
@@ -60,9 +58,15 @@
     color: #2D2D2D;
   }
 
-  .statement {
-    text-align: left;
+  .bodytext-container {
+    background-color: #E01F26 ;
+    color: var(--clr-white);
+    background-image: none;
   }
+
+  /* .statement {
+    text-align: left;
+  } */
   
   @media screen and (min-width: 768px) { 
     .statement {
@@ -93,6 +97,7 @@
   .title-project {
     font-family: 'Panchang', 'Open Sans', sans-serif;
     letter-spacing: 0.5rem;
+    color: var(--clr-white);
     text-transform: uppercase;
     /* opacity: .5; */
     font-size: x-large;
@@ -117,7 +122,6 @@
   
   #project-gallery {
     grid-template-columns: repeat(1, 1fr);
-    /* padding: 0 1rem; */
     padding-bottom: 0;
   }
 
@@ -151,14 +155,12 @@
     transform: scale(1.1);
   }
 
-  
   @media screen and (min-width: 768px) { 
     .project-image img {
       width: 600px;
     }   
   }
   
-  /* The Modal (background) - Gab */
   .modal {
     display: none;
     position: fixed;
@@ -172,7 +174,6 @@
     background-color: black;
   }
   
-  /* Modal Content */
   .modal-content {
     position: relative;
     margin: auto;
@@ -182,12 +183,11 @@
   }
   
   .mySlides img {
-    object-fit: contain; /* or cover, depending on your desired behavior */
+    object-fit: contain;
     width: 100%;
     height: 80vh;
   }
   
-  /* The Close Button */
   .close {
     color: #FFFBEA;
     position: fixed;
@@ -244,7 +244,6 @@
     color: #E01F26;
   }
   
-  /* Number text (1/6 etc) */
   .numbertext {
     color: #999;
     font-size: small;
