@@ -280,7 +280,7 @@ header {
 .gallery-start {
   background-color: var(--clr-black);
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
   /* grid-template-columns: repeat(1, 1fr); */
   gap: 2.5rem;
   text-align: center;
@@ -288,9 +288,8 @@ header {
   margin-inline: 5rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .gallery-start {
-    /* grid-template-columns: repeat(3, 2fr); */
     margin-inline: 10rem;
   }
 }
@@ -299,12 +298,6 @@ header {
   color: var(--clr-white);
   opacity: 0.3;
 }
-
-/* edited - Gab */
-.gallery .gallery-image {
-  width: 80%;
-}
-/* end */
 
 .gallery-item {
   position:relative;
