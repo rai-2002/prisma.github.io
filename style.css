@@ -365,7 +365,7 @@ header {
 
 /* catalogue */
 .catalogue {
-  background-color:var(--clr-red);
+  background-color:var(--clr-blue);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -393,12 +393,12 @@ header {
 }
 
 .redbutton-link:hover {
-  background-color: #029B83;
+  background-color: var(--clr-red);
 }
 
 @media screen and (max-width: 768px) {
   #catalogueIMG {
-    max-width: 50%; 
+    max-width: 70%; 
   }
 } 
 
