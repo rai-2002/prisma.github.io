@@ -214,9 +214,9 @@
   .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 100%;
+    top: 80%;
     width: auto;
-    padding: 1rem;
+    padding-inline: 2.5rem;
     margin-top: -50px;
     color: #FFFBEA;
     font-weight: bold;
@@ -250,5 +250,5 @@
     /* padding: 8px 12px; */
     position: fixed;
     top: 93%;
-    left: 48.5%;
+    left: 47%;
   }
