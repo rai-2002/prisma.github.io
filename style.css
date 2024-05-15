@@ -37,6 +37,11 @@ body {
   /* height: 100%; */
 }
 
+img {
+  color: #FFFBEA;
+  font-style: italic;
+}
+
 h1,
 h2,
 h3 {
