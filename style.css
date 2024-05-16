@@ -38,7 +38,7 @@ body {
 }
 
 img {
-  color: #FFFBEA;
+  color: var(--clr-white);
   font-style: italic;
 }
 
