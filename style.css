@@ -52,13 +52,8 @@ h3 {
   /* text-align: center; */
 }
 
-/* img {
-  display: block;
-} */
-
 .heading-style {
   color: var(--clr-white);
-  /* font-size: xx-large; */
   font-family: var(--ff-pan);
   line-height: 1.5;
   letter-spacing: 1rem;
@@ -72,7 +67,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000; /* Ensure it's above other content */
+  z-index: 1000; 
 }
 
 /* scroll bar */
@@ -293,7 +288,7 @@ header {
   margin-inline: 5rem;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .gallery-start {
     margin-inline: 10rem;
   }
