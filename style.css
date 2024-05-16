@@ -145,6 +145,7 @@ header {
 
 #contact {
   color: var(--clr-red);
+  font-size: larger;
 }
 
 .overlay a:hover, .overlay a:focus {
